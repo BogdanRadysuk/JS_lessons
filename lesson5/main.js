@@ -73,7 +73,7 @@
 // - створити функцію яка повертає найменьше число з масиву
 // const arr = [2,5,9]
 // const numb = (number) => {
-//     const result = number[0];
+//     let result = number[0];
 //     for (let i = 1; i < number.length; i++) {
 //         if (result > number[i]){
 //             result = number[i]
