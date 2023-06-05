@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="prise">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<div> </div>
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+<script>
+  function explorer(htmlElement) {
+    console.log(htmlElement)
+    let child = htmlElement.children
+    if (child.length !== 0){
+      for (const childElement of child) {
+        explorer(childElement)
+      }
+    }
+  }
+explorer(document.body)
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <button id="f4.1">prev</button>
+  <button id="f4.2">next</button>
+<script>
+  //     зробити масив на 100 об'єктів та дві кнопки prev next
+  // при завантажені сторінки з'являються перші 10 об'єктів.
+  //     При натисканні next виводяться настпні 10 об'єктів
+  // При натисканні prev виводяться попередні 10 об'єктів
+  let arr = []
+  for (let i = 0; i < 100; i++) {
+    arr.push(i)
+  }
+  console.log(arr)
+  window.onload = function (ev) {
+    ev.preventDefault()
+  }
+
+  let button1 = document.getElementById('f4.1')
+  let div = document.createElement('div')
+  document.body.appendChild(div)
+
+
+
+
+</script>
+</body>
+</html>

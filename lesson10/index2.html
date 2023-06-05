@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--є сторінка, на якій є блок, в кому знаходиьтся цифра. написати код,
+який при кожному перезавантажені сторінки буде додавати до неї +1-->
+<div id="f1">1</div>
+
+
+<script>
+let block = document.getElementById('f1')
+window.onload = function () {
+  block.innerText += 1
+}
+
+
+// console.log(typeof block);
+
+
+</script>
+</body>
+</html>
