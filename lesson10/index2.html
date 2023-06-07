@@ -15,7 +15,7 @@
 let value = localStorage.getItem('sum') || 0
 let div = document.getElementById('f1');
 div.innerText = value
-let Sum = value+1
+let Sum = +(value)+1
 let sumStr = Sum.toString();
 localStorage.setItem('sum', sumStr)
 
