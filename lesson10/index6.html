@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
+При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача-->
+<form name="f1">
+  <input type="number" placeholder="age" name="age">
+  <button>click</button>
+
+</form>
+<script>
+let f1 = document.forms.f1
+f1.onsubmit = function (ev) {
+  ev.preventDefault()
+
+    let div1 = document.createElement('div')
+    if (this.age.value<18 && this.age.value>0){
+    div1.innerText = 'age smaller than 18'
+  }
+  else if (this.age.value>=18 && this.age.value<120){
+      div1.innerText = 'age bigger than 18'
+  }
+  else div1.innerText = 'idk'
+    document.body.appendChild(div1)
+}
+</script>
+</body>
+</html>

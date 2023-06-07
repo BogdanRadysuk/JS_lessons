@@ -7,19 +7,32 @@
 <body>
 <!--є сторінка, на якій є блок, в кому знаходиьтся цифра. написати код,
 який при кожному перезавантажені сторінки буде додавати до неї +1-->
-<div id="f1">1</div>
+<div id="f1"></div>
 
 
 <script>
-let block = document.getElementById('f1')
-window.onload = function () {
-  block.innerText += 1
-}
+
+let count = localStorage.getItem('sum') || 0
+let countParse = JSON.parse('sum')
+console.log(countParse)
+let countSum = countParse+1
+let countString = JSON.stringify(countSum)
+let div = document.getElementById('f1');
+div.innerText = countString
+localStorage.setItem('sum', countString)
+
+
+
+
+
+// let block = document.getElementById('f1')
+// window.onload = function () {
+//     block.value.innerText += 1
+//   // block.value += 1
+// }
 
 
 // console.log(typeof block);
-
-
 </script>
 </body>
 </html>

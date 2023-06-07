@@ -5,27 +5,34 @@
     <title>Title</title>
 </head>
 <body>
-  <button id="f4.1">prev</button>
-  <button id="f4.2">next</button>
+<button id="f4">prev</button>
+<button id="f4.1">next</button>
+<div id="d4"></div>
 <script>
-  //     зробити масив на 100 об'єктів та дві кнопки prev next
-  // при завантажені сторінки з'являються перші 10 об'єктів.
-  //     При натисканні next виводяться настпні 10 об'єктів
-  // При натисканні prev виводяться попередні 10 об'єктів
-  let arr = []
-  for (let i = 0; i < 100; i++) {
-    arr.push(i)
-  }
-  console.log(arr)
-  window.onload = function (ev) {
-    ev.preventDefault()
-  }
+    //     зробити масив на 100 об'єктів та дві кнопки prev next
+    // при завантажені сторінки з'являються перші 10 об'єктів.
+    //     При натисканні next виводяться настпні 10 об'єктів
+    // При натисканні prev виводяться попередні 10 об'єктів
+    let arr = []
+    for (let i = 0; i < 100; i++) {
+        arr.push(i)
+    }
+    console.log(arr)
 
-  let button1 = document.getElementById('f4.1')
-  let div = document.createElement('div')
-  document.body.appendChild(div)
+    let div = document.getElementById('d4')
+    let button1 = document.getElementById('f4')
+    let button2 = document.getElementById('f4.1')
 
+    for (const value of arr) {
 
+        button2.onclick = function (ev) {
+            // for (let i = div.value.length; i < 10; i++) {
+            // div.innerText = value
+            //
+            //
+            // }
+        }
+    }
 
 
 </script>
