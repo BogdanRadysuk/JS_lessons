@@ -1,0 +1,20 @@
+/*//     user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/*//     блоки з короткою іфною про post - в ряд по 5 .*/
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divMain{
+    border: 3px solid blueviolet;
+    width: 100%;
+}
+.buttonLi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 30px;
+    background: cornflowerblue;
+}

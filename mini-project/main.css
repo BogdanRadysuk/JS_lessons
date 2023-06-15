@@ -1,0 +1,10 @@
+body{
+}
+.mainDiv{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    border: 1px solid black;
+}
