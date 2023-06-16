@@ -1,20 +1,32 @@
-/*//     user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
-/*//     блоки з короткою іфною про post - в ряд по 5 .*/
-.divButton{
+.divButton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.divMain{
+.divMain {
     border: 3px solid blueviolet;
     width: 100%;
+    border-radius: 25px;
+    background: #eff1ff;
 }
-.buttonLi{
+.buttonLi {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 20px;
     width: 90%;
     height: 30px;
     background: cornflowerblue;
+    border-radius: 25px;
+}
+.ulPosts{
+    font-family: Calibri;
+    background: khaki;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.liPosts{
+    width: 20%;
 }

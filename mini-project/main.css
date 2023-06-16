@@ -1,10 +1,14 @@
-body{
-}
-.mainDiv{
+.divMain{
     display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background: grey;
+    flex-wrap: wrap;
+    background: #eff1ff;
     border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Calibri;
+    height: 200px;
+}
+.div{
+    width: 50%;
+    color: #3aa9bb;
 }
